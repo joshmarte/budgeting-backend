@@ -1,0 +1,51 @@
+module.exports = [
+  {
+    date: "2017-06-01",
+    item_name: "Groceries",
+    amount: -30,
+    from: "C-Town",
+    category: "Food",
+  },
+  {
+    date: "2017-06-01",
+    item_name: "Shopping",
+    amount: -47,
+    from: "Target",
+    category: "Misc",
+  },
+  {
+    date: "2017-06-01",
+    item_name: "Income",
+    amount: 2000,
+    from: "Google",
+    category: "Income",
+  },
+  {
+    date: "2017-06-01",
+    item_name: "Gas",
+    amount: -25,
+    from: "Shell Gas Station",
+    category: "Gas",
+  },
+  {
+    date: "2017-08-01",
+    item_name: "Rent",
+    amount: -700,
+    from: "Pike International, LLC",
+    category: "Bills",
+  },
+  {
+    date: "2017-08-01",
+    item_name: "Income",
+    amount: 2000,
+    from: "Google",
+    category: "Income",
+  },
+  {
+    date: "2017-08-01",
+    item_name: "Groceries",
+    amount: -40,
+    from: "Mr. Kiwi",
+    category: "Food",
+  },
+];
