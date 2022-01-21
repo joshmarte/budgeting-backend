@@ -6,15 +6,6 @@ const budgetData = require("../models/budgetData");
 const budgetControllers = express.Router();
 
 // READ
-budgetControllers.get("/:id", (req, res) => {
-  const { id } = req.params;
-  res.json(budgetData[id] ? budgetData[id] : res.status(404).redirect());
-});
-
-budgetControllers.get("/", (req, res) => {
-  res.json(budgetData);
-});
-
 budgetControllers.get("/type", (req, res) => {
   let { name } = req.query;
 
@@ -27,6 +18,15 @@ budgetControllers.get("/type", (req, res) => {
   } else {
     res.json(budgetData);
   }
+});
+
+budgetControllers.get("/:id", (req, res) => {
+  const { id } = req.params;
+  res.json(budgetData[id] ? budgetData[id] : res.status(404).redirect());
+});
+
+budgetControllers.get("/", (req, res) => {
+  res.json(budgetData);
 });
 
 // CREATE
