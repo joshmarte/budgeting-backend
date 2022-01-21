@@ -15,6 +15,20 @@ budgetControllers.get("/", (req, res) => {
   res.json(budgetData);
 });
 
+budgetControllers.get("/type", (req, res) => {
+  let { name } = req.query;
+
+  let specificTrans = budgetData.filter((item) => {
+    return item.item_name.toLowerCase() === name;
+  });
+
+  if (name) {
+    res.json(specificTrans);
+  } else {
+    res.json(budgetData);
+  }
+});
+
 // CREATE
 budgetControllers.post("/", (req, res) => {
   budgetData.push(req.body);
